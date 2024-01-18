@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Spinnaker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  background-color: #fff;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 95%;
+  height: 10%;
+  /* background-color: black; */
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav > h1 {
+  font-size: 3vw;
+}
+
+#mid-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Spinnaker', sans-serif;
+  gap: 20px;
+  position: relative;
+}
+
+#mid-nav a {
+  font-size: 18px;
+  text-decoration: none;
+  /* font-weight: 600; */
+  padding-left: 50px;
+  color: #000;
+}
+
+#mid-nav a:hover {
+  text-decoration: underline;
+}
+
+#right-nav {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  right: 5%;
+}
+
+#srch-bar {
+  background-color: lightgray;
+  padding: 10px;
+  color: gray;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#srch-bar input {
+  outline: none;
+  width: 100px;
+  padding-left: 10px;
+}
+
+#srch-bar input[type='search'] {
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  background: none;
+}
+
+#srch-bar input[type='search']:focus {
+  background-color: rgba(248, 248, 248, 0.447);
+}
+
+#right-nav > i {
+  padding: 16px;
+  /* background-color: lightgray; */
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+#user {
+  background-color: #000;
+  color: #fff;
+}
+
+#cart {
+  background-color: #8b4512;
+  color: #fff;
+}
+
+#head {
+  width: 95%;
+  height: 90%;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+#head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
