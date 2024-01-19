@@ -111,6 +111,7 @@ nav > h1 {
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
+  position: relative;
 }
 
 #head img {
@@ -118,4 +119,124 @@ nav > h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+#head-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10%, 40%);
+  color: #fff;
+}
+
+#head-text h1 {
+  font-size: 5vw;
+  margin-bottom: 5vh;
+}
+
+#head-text h2 {
+  padding: 1.5vw;
+  background-color: #46200573;
+  font-size: 3vw;
+  width: 55%;
+  margin-bottom: 5vh;
+}
+
+#head-desc {
+  position: relative;
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
+}
+
+#head-desc h4 {
+  font-size: 1.5vw;
+}
+
+#head-desc p {
+  width: 70%;
+  font-size: 14px;
+}
+
+#head-desc h5 {
+  font-size: 1vw;
+}
+
+#head-desc::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+  height: 90%;
+  width: 3px;
+  background-color: #8b4512;
+  margin-left: -10px;
+}
+
+#hero-card {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 500px;
+  height: 180px;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(89, 41, 5, 1) 0%,
+    rgba(147, 66, 5, 1) 33%,
+    rgba(175, 88, 23, 1) 63%,
+    rgba(185, 93, 24, 1) 82%,
+    rgba(235, 120, 35, 0.758508505941439) 100%
+  );
+  transform: translate(-10%, -20%);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-radius: 20px;
+  z-index: 99;
+}
+
+#hero-card #right {
+  width: 60%;
+  object-fit: cover;
+  height: 100%;
+}
+#hero-card #right img {
+  border-radius: 0 20px 20px 0;
+}
+
+#hero-card #left {
+  position: absolute;
+  transform: translate(-80%, 0%);
+  z-index: 9;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+  background: rgb(89, 41, 5);
+  background: rgb(89, 41, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(89, 41, 5, 1) 0%,
+    rgba(147, 66, 5, 1) 33%,
+    rgba(175, 88, 23, 1) 63%,
+    rgba(235, 120, 35, 0) 100%
+  );
+}
+
+#left i {
+  font-size: 2vw;
+  padding-left: 10%;
+}
+
+#left h3 {
+  width: 50%;
+  font-size: 20px;
+  padding-left: 10%;
 }
